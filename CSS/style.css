@@ -79,7 +79,7 @@ hr {
   border: 0;
 }
 
-.watch-live-btn:hover{
+.watch-live-btn:hover {
   background-color: white;
   color: black;
 }
@@ -138,6 +138,16 @@ hr {
 .side-nav a:hover {
   color: black;
   background-color: goldenrod;
+}
+
+.side-nav a:active {
+  color: rgb(89, 110, 243);
+  background-color: rgb(235, 235, 235);
+}
+
+.side-nav .upcoming-btn,.side-nav .blog-btn{
+  background-color: rgb(77, 141, 197);
+  color: black;
 }
 
 .blog {
@@ -781,6 +791,10 @@ hr {
     align-items: center;
     margin-top: 20px;
   }
+
+  .view-btn {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 481.98px) {
@@ -811,6 +825,10 @@ hr {
     justify-content: space-between;
     align-items: center;
     margin-top: 20px;
+  }
+
+  .view-btn {
+    display: none;
   }
 }
 
@@ -890,8 +908,8 @@ hr {
   margin-bottom: 30px;
 }
 
-@media screen and (max-width:1299px){
-  .match-info h2{
+@media screen and (max-width: 1299px) {
+  .match-info h2 {
     font-size: 19px;
   }
 
@@ -899,8 +917,8 @@ hr {
     font-size: 15px;
   }
 }
-@media screen and (max-width:1299px){
-  .match-info h2{
+@media screen and (max-width: 1299px) {
+  .match-info h2 {
     font-size: 19px;
   }
 
@@ -909,8 +927,8 @@ hr {
   }
 }
 
-@media screen and (max-width:1150px){
-  .match-info h2{
+@media screen and (max-width: 1150px) {
+  .match-info h2 {
     font-size: 17px;
   }
 
@@ -919,8 +937,8 @@ hr {
   }
 }
 
-@media screen and (max-width:1050px){
-  .match-info h2{
+@media screen and (max-width: 1050px) {
+  .match-info h2 {
     font-size: 16px;
   }
 
