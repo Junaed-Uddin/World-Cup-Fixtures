@@ -43,6 +43,7 @@ hr {
 .banner-text,
 .banner-thumbnail {
   width: 50%;
+  overflow: hidden;
 }
 
 .banner-text {
@@ -57,12 +58,38 @@ hr {
   width: 70%;
 }
 
+/* animation in header  */
+.slide-right {
+  animation: 3s slide-right;
+}
+@keyframes slide-right {
+  from {
+    margin-left: -100%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+
 .banner p {
   font-size: 1.2vw;
   color: #ffffff;
   margin-top: 20px;
   line-height: 30px;
   width: 90%;
+}
+
+/* Slide Left */
+.slide-left {
+  animation: 3s slide-left;
+}
+@keyframes slide-left {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: 0%;
+  }
 }
 
 .watch-live-btn {
@@ -77,6 +104,19 @@ hr {
   font-size: 1.3vw;
   text-align: center;
   border: 0;
+}
+
+/* button animation */
+.fade-in {
+  animation: fadeIn ease 3.5s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .watch-live-btn:hover {
@@ -145,9 +185,10 @@ hr {
   background-color: rgb(235, 235, 235);
 }
 
-.side-nav .upcoming-btn,.side-nav .blog-btn{
+.side-nav .upcoming-btn,
+.side-nav .blog-btn {
   background-color: rgb(77, 141, 197);
-  color: black;
+  color: white;
 }
 
 .blog {
